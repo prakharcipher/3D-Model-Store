@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>&lt;model-tag&gt;</title>
+		<style>
+			body {
+				font-family: monospace;
+				text-align: center;
+			}
+			h1 {
+				font-size: 24px;
+				font-weight: normal;
+			}
+			h2 {
+				font-size: 18px;
+				font-weight: normal;
+			}
+			a, a:visited {
+				color: blue;
+			}
+			pre {
+				font-size: 13px;
+
+				margin: 0px !important;
+				width: 400px;
+
+				vertical-align: top;
+			}
+			pre code {
+				tab-size: 2 !important;
+			}
+			div.example {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 24px;
+			}
+		</style>
+		<link rel="stylesheet" href="examples/js/prism.css" data-noprefix />
+		<script src="examples/js/prism.js"></script>
+	</head>
+	<body>
+		<script>
+			if ( 'customElements' in window === false ) {
+				var div = document.createElement( 'div' );
+				div.innerHTML = 'Your browser doesn\'t support <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements" style="color:white">Custom Elements</a> :(';
+				div.style.cssText = 'font-size:20px;color:white;background-color:red;padding:20px;margin-bottom:30px;';
+				document.body.appendChild( div );
+			}
+		</script>
+		<h1>&lt;model-tag&gt; <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements">Custom Elements</a> for displaying 3D models</h1>
+		<h2><a href="https://github.com/mrdoob/model-tag/archive/master.zip">download</a> - <a href="https://github.com/mrdoob/model-tag">github</a></h2>
+		<br />
+
+		<h2>&lt;model-gltf&gt;</h2>
+
+		<div class="example">
+			<pre data-src="examples/model-gltf.html"></pre>
+			<iframe src="examples/model-gltf.html" marginwidth="0" marginheight="0" scrolling="no" style="border:0;width:400px;height:400px;"></iframe>
+		</div>
+
+		<h2>&lt;model-obj&gt;</h2>
+
+		<div class="example">
+			<pre data-src="examples/model-obj.html"></pre>
+			<iframe src="examples/model-obj.html" marginwidth="0" marginheight="0" scrolling="no" style="border:0;width:400px;height:400px;"></iframe>
+		</div>
+
+		<h2>&lt;model-stl&gt;</h2>
+
+		<div class="example">
+			<pre data-src="examples/model-stl.html"></pre>
+			<iframe src="examples/model-stl.html" marginwidth="0" marginheight="0" scrolling="no" style="border:0;width:400px;height:400px;"></iframe>
+		</div>
+
+		<h2>&lt;model-three&gt;</h2>
+
+		<div class="example">
+			<pre data-src="examples/model-three.html"></pre>
+			<iframe src="examples/model-three.html" marginwidth="0" marginheight="0" scrolling="no" style="border:0;width:400px;height:400px;"></iframe>
+		</div>
+
+	</body>
+</html>
